@@ -13,5 +13,6 @@ initial begin
   end
 end
 
-
+initial
+  $monitor("At time %t, Y=%b, A=%b,B=%b,C=%b,D=%b",$time,Y,data[3],data[3],data[1],data[0]);
 endmodule

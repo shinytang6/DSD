@@ -2,7 +2,6 @@
 `include "Encoder8x3.v"
 
 module tb_Encoder8x3;
-
   reg [7:0] tb_data;
   wire [2:0] tb_code;
   integer k;
@@ -19,5 +18,5 @@ module tb_Encoder8x3;
   end
 
   initial
-	$monitor("At time %t, data=%b, code =%b",$time,tb_data,tb_code);
+	$display("At time %t, data=%b, code =%b",$time,tb_data,tb_code);
 endmodule

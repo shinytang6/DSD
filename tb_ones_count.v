@@ -10,9 +10,11 @@ initial begin
   data = 8'b0;
   for(k=0; k<256; k=k+1) begin
     #5;
-    data = data + 1'b1;
+    data = data + 1;
   end
 end
 
+initial
+  $monitor("At time %t, count=%4b, data_in =%8b",$time,count,data);
 
 endmodule

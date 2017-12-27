@@ -26,4 +26,12 @@ initial begin
     #5;
   end
 end
+
+
+initial begin
+  $monitor("At time %t, Y1=%b, A1 =%b, B1=%b, C1=%b, D1=%b",$time,Y1,A1,B1,C1,D1);
+  $monitor("At time %t, Y2=%b, A2 =%b, B2=%b, C2=%b, D2=%b",$time,Y2,A2,B2,C2,D2);
+  $monitor("At time %t, Y3=%b, A3 =%b, B3=%b, C3=%b, D3=%b",$time,Y1,A3,B3,C3,D3);
+  $monitor("At time %t, Y4=%b, A4 =%b, B4=%b, C4=%b, D4=%b",$time,Y1,A4,B4,C4,D4);
+end
 endmodule

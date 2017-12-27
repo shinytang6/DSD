@@ -4,7 +4,7 @@
 module top;
 wire flag;
 reg din,clk,rst;
-//mealy m1(.flag(flag),.din(din),.clk(clk),.rst(rst));
+mealy m1(.flag(flag),.din(din),.clk(clk),.rst(rst));
 moore m2(.flag(flag),.din(din),.clk(clk),.rst(rst));
 integer i;
 reg [15:0] data = 16'b0100_0110_0101_0101;

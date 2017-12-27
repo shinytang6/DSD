@@ -18,5 +18,11 @@ initial begin
   sig_in = 0;
   #10 sig_in = 1;
   forever #40 sig_in = ~sig_in;
+  
 end
+
+initial
+    begin
+    $monitor("At time %t, sig_out=%b, sig_in =%b, reset=%b",$time,sig_out,sig_in,reset);
+  end  
 endmodule

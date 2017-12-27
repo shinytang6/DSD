@@ -26,5 +26,8 @@ module tb_LFSR;
     #50 load = 1'b1;
     din = 8'b0;
     #10 load = 1'b0;
+    #10 $stop;
   end 
+ initial
+   $monitor("time:%0000tns,",$time,"q:%b,load:%b,din:%b",q,load,din);
 endmodule

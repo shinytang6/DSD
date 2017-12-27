@@ -1,5 +1,4 @@
 `timescale 10ns/1ns
-
 module wavegen();
 reg dat_out;
 initial
@@ -12,5 +11,6 @@ dat_out = 0;
 #2 dat_out = 1;
 #3 dat_out = 0;
 #5 dat_out = 1;
+#5;
 end
 endmodule

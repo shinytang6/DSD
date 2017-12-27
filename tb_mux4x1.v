@@ -27,4 +27,6 @@ initial begin
   end
 end
 
+initial
+   $monitor("At time %t, dout=%b, sel=%b",$time,tb_dout,tb_s);
 endmodule

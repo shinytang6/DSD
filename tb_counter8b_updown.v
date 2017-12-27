@@ -19,4 +19,8 @@ initial begin
   dir = 1;
   #100 dir = 0;
 end
+
+initial begin
+    $monitor("time:%tns,",$time,"count:%b, reset:%b, dir:%b",count,reset,dir);
+  end  
 endmodule
