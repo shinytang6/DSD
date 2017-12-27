@@ -6,7 +6,7 @@ always @(negedge clk) begin
     else begin
       case(state)
 	E: if(din) begin 
-	  	state <= G;
+	  	state <= E;
 	  	flag <= 0;
               end 
 	      else begin
@@ -30,7 +30,7 @@ always @(negedge clk) begin
 	  	flag <= 0;
               end
 	H: if(din) begin 
-	  	state <= G;
+	  	state <= E;
 	  	flag <= 0;
               end 
 	      else begin
